@@ -84,3 +84,33 @@ class Solution509_3 {
     
 }
 
+/**
+ func printTime(_ n : Int) {
+     let slu = Solution509_1()
+     let start = CFAbsoluteTimeGetCurrent()
+     let ret1 = slu.fib(n)
+     let end1 = CFAbsoluteTimeGetCurrent() - start
+     let str = String(format: "%f", end1)
+     print("\(ret1) & \(str)")
+ }
+ func printTime2(_ n : Int) {
+     let slu = Solution509_2()
+     let start = CFAbsoluteTimeGetCurrent()
+     let ret1 = slu.fib(n)
+     let end1 = CFAbsoluteTimeGetCurrent() - start
+     let str = String(format: "%f", end1)
+     print("\(ret1) & \(str)")
+ }
+ func printTime3(_ n : Int) {
+     let slu = Solution509_3()
+     let start = CFAbsoluteTimeGetCurrent()
+     let ret1 = slu.fib(n)
+     let end1 = CFAbsoluteTimeGetCurrent() - start
+     let str = String(format: "%f", end1)
+     print("\(ret1) & \(str)")
+ }
+ printTime(30)
+ printTime2(30)
+ printTime3(30)
+ */
+

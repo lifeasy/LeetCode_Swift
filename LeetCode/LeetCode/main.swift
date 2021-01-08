@@ -15,7 +15,7 @@ import Foundation
 //let result = so01.twoSum(nums, target)
 //print("result : \(result)")
 let slu = Solution189()
-var arr = [-1]
+var arr = [-1,-100,3,99]
 var k = 3
 slu.rotate(&arr, k)
 print(arr)

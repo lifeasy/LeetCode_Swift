@@ -46,19 +46,32 @@
 
 import Foundation
 class Solution189 {
+    // [-1,-100,3,99] 2
     func rotate(_ nums: inout [Int], _ k: Int) {
         let count = nums.count
         let step = k % count
-        var arr = Array(repeating: 0, count: count)
-        for index in 0..<count {
-            var targetIndex = index + step
-            if targetIndex >= count {
-                targetIndex -= count
-            }
-            arr[targetIndex] = nums[index]
+        guard step > 0 else {
+            return
         }
-        for index in 0..<count {
-            nums[index] = arr[index]
-        }
+        let sub1 = nums[0..<(count-step)]
+        let sub2 = nums[(count-step)..<count]
+        
+        nums[0..<step] = sub2
+        nums[step..<count] = sub1
     }
+//    func rotate(_ nums: inout [Int], _ k: Int) {
+//        let count = nums.count
+//        let step = k % count
+//        var arr = Array(repeating: 0, count: count)
+//        for index in 0..<count {
+//            var targetIndex = index + step
+//            if targetIndex >= count {
+//                targetIndex -= count
+//            }
+//            arr[targetIndex] = nums[index]
+//        }
+//        for index in 0..<count {
+//            nums[index] = arr[index]
+//        }
+//    }
 }

@@ -14,8 +14,8 @@ import Foundation
 //let so01 = Solution_01()
 //let result = so01.twoSum(nums, target)
 //print("result : \(result)")
-var slu = Solution228()
-var arr = slu.summaryRanges([0,2,3,4,6,8,9])
-print(arr)
+var slu = Solution09()
+var ret = slu.isPalindrome(10111101)
+print(ret)
 print("Hello, World!")
 

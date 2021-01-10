@@ -14,10 +14,8 @@ import Foundation
 //let so01 = Solution_01()
 //let result = so01.twoSum(nums, target)
 //print("result : \(result)")
-let slu = Solution189()
-var arr = [-1,-100,3,99]
-var k = 3
-slu.rotate(&arr, k)
+var slu = Solution228()
+var arr = slu.summaryRanges([0,2,3,4,6,8,9])
 print(arr)
 print("Hello, World!")
 

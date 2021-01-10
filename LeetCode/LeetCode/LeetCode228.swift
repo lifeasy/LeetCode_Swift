@@ -55,32 +55,52 @@ import Foundation
 // [0,2,3,4,6,8,9]
 class Solution228 {
     func summaryRanges(_ nums: [Int]) -> [String] {
-        var result : [String] = []
+        if nums.isEmpty {
+            return []
+        }
+        var ret : [String] = []
         let count = nums.count
-        if count == 0 {
-            return result
-        }
-        var startIndex = 0
-        var endIndex = 0
-        while endIndex+1 < count {
-            let nextIndex = endIndex + 1
-            if nums[nextIndex] - nums[endIndex] == 1 {
-                endIndex = nextIndex
-            } else {
-                if startIndex == endIndex {
-                    result.append("\(nums[startIndex])")
-                } else {
-                    result.append("\(nums[startIndex])->\(nums[endIndex])")
-                }
-                startIndex = nextIndex
-                endIndex = nextIndex
+        var i = 0
+        while i < count {
+            let low = i
+            while i + 1 < count && nums[i + 1] - nums[i] == 1 {
+                i += 1
             }
+            if i == low {
+                ret.append("\(nums[i])")
+            } else {
+                ret.append("\(nums[low])->\(nums[i])")
+            }
+            i += 1
         }
-        if startIndex == endIndex {
-            result.append("\(nums[startIndex])")
-        } else {
-            result.append("\(nums[startIndex])->\(nums[endIndex])")
-        }
-        return result
+        return ret
+        
+//        var result : [String] = []
+//        let count = nums.count
+//        if count == 0 {
+//            return result
+//        }
+//        var startIndex = 0
+//        var endIndex = 0
+//        while endIndex+1 < count {
+//            let nextIndex = endIndex + 1
+//            if nums[nextIndex] - nums[endIndex] == 1 {
+//                endIndex = nextIndex
+//            } else {
+//                if startIndex == endIndex {
+//                    result.append("\(nums[startIndex])")
+//                } else {
+//                    result.append("\(nums[startIndex])->\(nums[endIndex])")
+//                }
+//                startIndex = nextIndex
+//                endIndex = nextIndex
+//            }
+//        }
+//        if startIndex == endIndex {
+//            result.append("\(nums[startIndex])")
+//        } else {
+//            result.append("\(nums[startIndex])->\(nums[endIndex])")
+//        }
+//        return result
     }
 }

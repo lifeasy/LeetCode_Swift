@@ -82,11 +82,11 @@ class Solution13 {
                 }
             }
         }
-        var ret = 0
-        for num in stack {
-            ret += num
-        }
-        return ret
+//        var ret = 0
+//        for num in stack {
+//            ret += num
+//        }
+        return stack.reduce(0){$0+$1}
         
         /*
         if s.isEmpty {

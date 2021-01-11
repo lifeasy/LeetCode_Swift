@@ -64,6 +64,31 @@ import Foundation
 
 class Solution13 {
     func romanToInt(_ s: String) -> Int {
+        let single : [Character : Int] = ["I" : 1, "V" :  5,"X" : 10, "L" : 50, "C" : 100 , "D" : 500, "M" : 1000]
+        var stack = [Int]()
+        for character in s {
+            let num = single[character]!
+            if stack.isEmpty {
+                stack.append(num)
+            } else {
+                let lastIndex = stack.count - 1
+                let lastNum = stack[lastIndex]
+                if lastNum == num {
+                    stack[lastIndex] = 2 * num
+                } else if lastNum < num {
+                    stack[lastIndex] = num - lastNum
+                } else {
+                    stack.append(num)
+                }
+            }
+        }
+        var ret = 0
+        for num in stack {
+            ret += num
+        }
+        return ret
+        
+        /*
         if s.isEmpty {
             return 0
         }
@@ -96,5 +121,6 @@ class Solution13 {
             }
         }
         return ret
+         */
     }
 }

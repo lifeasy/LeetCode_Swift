@@ -14,8 +14,12 @@ import Foundation
 //let so01 = Solution_01()
 //let result = so01.twoSum(nums, target)
 //print("result : \(result)")
-var slu = Solution09()
-var ret = slu.isPalindrome(10111101)
-print(ret)
+
+var arr = [3,9,234,12,495,2,44,569,123,99,265]
+
+//BubbleSort.sort(&arr)
+arr.bubbleSort()
+print(arr)
+
 print("Hello, World!")
 

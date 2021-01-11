@@ -7,19 +7,9 @@
 //
 
 import Foundation
-
-// 01
-//let nums = [2, 7, 11, 15], target = 9
-//
-//let so01 = Solution_01()
-//let result = so01.twoSum(nums, target)
-//print("result : \(result)")
-
-var arr = [3,9,234,12,495,2,44,569,123,99,265]
-
-//BubbleSort.sort(&arr)
-arr.bubbleSort()
-print(arr)
-
-print("Hello, World!")
+print("Start!")
+var slu = Solution13()
+var ret = slu.romanToInt("MCMXCIV")
+print(ret)
+print("End!")
 

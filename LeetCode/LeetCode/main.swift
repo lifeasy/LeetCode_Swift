@@ -8,8 +8,8 @@
 
 import Foundation
 print("Start!")
-var slu = Solution13()
-var ret = slu.romanToInt("MCMXCIV")
+var slu = Solution859()
+var ret = slu.buddyStrings("aaaaaaabc", "aaaaaaacb")
 print(ret)
 print("End!")
 

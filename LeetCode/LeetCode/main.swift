@@ -8,8 +8,9 @@
 
 import Foundation
 print("Start!")
-var slu = Solution859()
-var ret = slu.buddyStrings("aaaaaaabc", "aaaaaaacb")
-print(ret)
+
+let stringHandle = StringAbout()
+stringHandle.stringHandle()
+
 print("End!")
 

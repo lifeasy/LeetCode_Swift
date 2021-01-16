@@ -100,7 +100,7 @@ class StringAbout {
         #endif
         
         //MARK: 字符串的操作
-        #if true
+        #if false
         // 字符串格式化
         let str = String(format: "%d个哈哈", 15)
         print(str)

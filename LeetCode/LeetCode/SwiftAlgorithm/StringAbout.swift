@@ -101,7 +101,87 @@ class StringAbout {
         
         //MARK: 字符串的操作
         #if true
-        // 
+        // 字符串格式化
+        let str = String(format: "%d个哈哈", 15)
+        print(str)
+        // 访问字符串
+        var str1 = "abcdefg"
+        print(str1[str1.startIndex])
+        print(str1[str1.index(before: str1.endIndex)])
+        // 删除
+        str1.removeFirst()
+        print(str1)
+        str1.remove(at: str1.index(str1.startIndex, offsetBy: 1))
+        print(str1)
+        str1.removeLast()
+        print(str1)
+        str1.removeFirst(2)
+        print(str1)
+        str1.removeLast(2)
+        print(str1)
+        str1 = "Hello World"
+        str1.removeSubrange(str1.index(after: str1.startIndex)...str1.index(str1.startIndex, offsetBy: 3))
+        print(str1)
+        if let range = str1.range(of: "orl") {
+            str1.removeSubrange(range)
+        }
+        print(str1)
+        #endif
+        
+        #if false
+        // 字符串比较
+        let str1 = "bbc"
+        let str2 = "adbc"
+        let compare = str1.compare(str2)
+        print(compare.rawValue)
+        #endif
+        
+        #if false
+        // 字符串包含
+        let str1 = "Hello"
+        let str2 = "Hello World"
+        if str2.contains(str1) {
+            print("contains")
+        }
+        #endif
+        
+        #if false
+        // 字符串分割
+        let str1 = "Hello World"
+        let ret = str1.split(separator: " ")
+        print(ret)
+        #endif
+        
+        // 字符串 截取子串
+        #if false
+        let str1 = "Hello World"
+        // 截取头部
+        print(str1.prefix(2))
+        // 截取尾部
+        print(str1.suffix(2))
+        // 截取指定index
+        print(str1[str1.index(str1.startIndex, offsetBy: 2)...str1.index(str1.startIndex, offsetBy: 5)])
+        // 指定range
+        let range = str1.range(of: "llo W")
+        if let r = range {
+            print(str1[r.lowerBound..<r.upperBound])
+        }
+        #endif
+        
+        //MARK: 字符串替换
+        #if false
+        let str1 = "Hello World"
+        let str2 = str1.replacingOccurrences(of:"He",with:"St")
+        print(str2)
+        #endif
+        
+        //MARK: 字符串插入
+        #if false
+        var str1 = "Hello World"
+        str1.insert("A", at: str1.startIndex)
+        print(str1)
+        str1.insert(contentsOf:"666",at: str1.endIndex)
+        print(str1)
         #endif
     }
 }

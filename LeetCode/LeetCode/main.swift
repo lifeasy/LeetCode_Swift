@@ -7,10 +7,10 @@
 //
 
 import Foundation
-print("Start!")
+print(">>>>>>>>>>>>>>>>>>>>Start!<<<<<<<<<<<<<<<<<<<<<<<")
 
 let stringHandle = StringAbout()
 stringHandle.stringHandle()
 
-print("End!")
+print(">>>>>>>>>>>>>>>>>>>>End!<<<<<<<<<<<<<<<<<<<<<<<")
 

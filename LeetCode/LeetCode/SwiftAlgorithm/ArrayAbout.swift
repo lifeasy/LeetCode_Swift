@@ -138,6 +138,12 @@ class ArrayAbout {
         print(arr)//[1]
         arr.removeAll()
         print(arr)//[]
+        let arr1 = [1, 2, 3, 4, 7, 3]
+        print(arr1.drop{$0<4})// drop掉第一个给定表达式的值，返回后面的子序列 [4, 7, 3]
+        print(arr1.dropFirst())//[2, 3, 4, 7, 3]
+        print(arr1.dropFirst(2))//[3, 4, 7, 3]
+        print(arr1.dropLast())//[1, 2, 3, 4, 7]
+        print(arr1.dropLast(2))//[1, 2, 3, 4]
         #endif
         //MARK: 运算符
         #if false
@@ -157,7 +163,7 @@ class ArrayAbout {
         print(arr.contains(3))//true
         print(arr.lastIndex(of: 2)!)//1
         print(arr.firstIndex(of: 4)!)//3
-        
+        print(arr.split(separator: 3)) // [ArraySlice([1, 2]), ArraySlice([4, 7])]
     }
 }
 

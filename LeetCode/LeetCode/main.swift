@@ -9,8 +9,8 @@
 import Foundation
 print(">>>>>>>>>>>>>>>>>>>>Start!<<<<<<<<<<<<<<<<<<<<<<<")
 
-let arrayHandle = ArrayAbout()
-arrayHandle.arrayHandle()
+let handle = DictionaryAbout()
+handle.dictionaryHandle()()
 
 print(">>>>>>>>>>>>>>>>>>>>End!<<<<<<<<<<<<<<<<<<<<<<<")
 

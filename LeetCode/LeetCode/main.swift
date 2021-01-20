@@ -10,7 +10,7 @@ import Foundation
 print(">>>>>>>>>>>>>>>>>>>>Start!<<<<<<<<<<<<<<<<<<<<<<<")
 
 let handle = DictionaryAbout()
-handle.dictionaryHandle()()
+handle.dictionaryHandle()
 
 print(">>>>>>>>>>>>>>>>>>>>End!<<<<<<<<<<<<<<<<<<<<<<<")
 

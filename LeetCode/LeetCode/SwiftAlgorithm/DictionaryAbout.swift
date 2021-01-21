@@ -33,13 +33,32 @@ class DictionaryAbout {
         #endif
         
         //MARK: 遍历 遍历的输入是一个元组
+        #if false
         let dic = ["name":"lisi","class":"3"]
         for (key,value) in dic {
             print("\(key),\(value)")
         }
         dic.forEach{(key,value) in print("\(key),\(value)")}
         dic.map{print("\($0.0),\($0.1)")}
+        #endif
         
+        //MARK: 字典取值
+        #if false
+        let dic = ["name":"lisi","class":"3"]
+        // 字典取值是可选值
+        print(dic["name"] ?? "") // list
+        print(dic["age"]) // nil
+        #endif
         
+        //MARK: 增删改
+        var dic = ["name":"lisi","class":"3","book":"yuwen"]
+        dic["name"] = "zhangsan"
+        print(dic) //["class": "3", "name": "zhangsan", "book": "yuwen"]
+        dic.updateValue("wangwu", forKey: "name")
+        print(dic)//["class": "3", "name": "wangwu", "book": "yuwen"]
+        dic["name"] = nil
+        print(dic)//["class": "3", "book": "yuwen"]
+        dic.removeValue(forKey:"book")
+        print(dic)//["class": "3"]        
     }
 }

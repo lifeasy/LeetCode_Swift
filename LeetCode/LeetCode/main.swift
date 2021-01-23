@@ -9,13 +9,8 @@
 import Foundation
 print(">>>>>>>>>>>>>>>>>>>>Start!<<<<<<<<<<<<<<<<<<<<<<<")
 
-var a = 1234124
-var b = String(a)
-var arr = Array(b)
-var arrI = arr.map{Int(String($0))!}
-
-let handle = SetAbout()
-handle.setHandle()
+let slu = Solution414()
+print(slu.thirdMax([2,2,3,1]))
 
 print(">>>>>>>>>>>>>>>>>>>>End!<<<<<<<<<<<<<<<<<<<<<<<")
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830F06F325C07479002C2D4C /* LeetCode1128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F06F225C07479002C2D4C /* LeetCode1128.swift */; };
 		8312A67A25A21EE7003791FB /* LeetCode86.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8312A67925A21EE7003791FB /* LeetCode86.swift */; };
 		8312A67D25A367AB003791FB /* LeetCode509.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8312A67C25A367AB003791FB /* LeetCode509.swift */; };
 		8312A68025A60E70003791FB /* LeetCode399.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8312A67F25A60E70003791FB /* LeetCode399.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		830F06F225C07479002C2D4C /* LeetCode1128.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode1128.swift; sourceTree = "<group>"; };
 		8312A67925A21EE7003791FB /* LeetCode86.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode86.swift; sourceTree = "<group>"; };
 		8312A67C25A367AB003791FB /* LeetCode509.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode509.swift; sourceTree = "<group>"; };
 		8312A67F25A60E70003791FB /* LeetCode399.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode399.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				83D371CE25B1E8210043D91C /* LeetCode859.swift */,
 				83E81B1C25BB32D100BAD198 /* LeetCode989.swift */,
 				83D371CB25B0A83C0043D91C /* LeetCode1018.swift */,
+				830F06F225C07479002C2D4C /* LeetCode1128.swift */,
 				83D371D825B354060043D91C /* LeetCode1232.swift */,
 			);
 			path = LeetCode;
@@ -252,6 +255,7 @@
 				8316D4D625B7B9EE00F28EE2 /* DictionaryAbout.swift in Sources */,
 				8312A6E925AB263D003791FB /* LeetCode228.swift in Sources */,
 				8312A6EC25AB596B003791FB /* LeetCode09.swift in Sources */,
+				830F06F325C07479002C2D4C /* LeetCode1128.swift in Sources */,
 				83E81E6B25BC7BCB00BAD198 /* LeetCode414.swift in Sources */,
 				8312A68025A60E70003791FB /* LeetCode399.swift in Sources */,
 				9E0AFC5224BDFCA10075D556 /* LeetCode04.swift in Sources */,

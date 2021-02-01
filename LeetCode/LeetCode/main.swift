@@ -9,8 +9,8 @@
 import Foundation
 print(">>>>>>>>>>>>>>>>>>>>Start!<<<<<<<<<<<<<<<<<<<<<<<")
 
-let slu = Solution414()
-print(slu.thirdMax([2,2,3,1]))
+let regExp = RegExp()
+regExp.test()
 
 print(">>>>>>>>>>>>>>>>>>>>End!<<<<<<<<<<<<<<<<<<<<<<<")
 

@@ -9,8 +9,8 @@
 import Foundation
 print(">>>>>>>>>>>>>>>>>>>>Start!<<<<<<<<<<<<<<<<<<<<<<<")
 
-let regExp = RegExp()
-regExp.test()
+let slu = Solution224()
+print(slu.calculate("1 + 1"))
 
 print(">>>>>>>>>>>>>>>>>>>>End!<<<<<<<<<<<<<<<<<<<<<<<")
 

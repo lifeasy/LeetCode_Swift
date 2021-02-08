@@ -9,8 +9,10 @@
 import Foundation
 print(">>>>>>>>>>>>>>>>>>>>Start!<<<<<<<<<<<<<<<<<<<<<<<")
 
-let slu = Solution224()
-print(slu.calculate("1 + 1"))
 
+var arr = [4,5,6,1,3,2,10,8,9,7,6,8,4,1,1,4,5,7]
+//MySort.quickSort(&arr)
+MySort.countingSort(&arr)
+print(arr)
 print(">>>>>>>>>>>>>>>>>>>>End!<<<<<<<<<<<<<<<<<<<<<<<")
 

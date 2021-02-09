@@ -10,9 +10,9 @@ import Foundation
 print(">>>>>>>>>>>>>>>>>>>>Start!<<<<<<<<<<<<<<<<<<<<<<<")
 
 
-var arr = [4,5,6,1,3,2,10,8,9,7,6,8,4,1,1,4,5,7]
+var arr = [1,3,5,7,8,11,13,16,19,23,45,98,299,1145]
 //MySort.quickSort(&arr)
-MySort.countingSort(&arr)
-print(arr)
+let ans = BinarySearch.recursionSearch(arr, 45)
+print(ans)
 print(">>>>>>>>>>>>>>>>>>>>End!<<<<<<<<<<<<<<<<<<<<<<<")
 

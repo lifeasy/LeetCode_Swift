@@ -76,8 +76,8 @@ class BinarySearch {
         }
         return -1;
     }
-    // 查找第一个值等于给定值的元素 返回元素的index
-    static func lastEqualSearch2(_ arr: [Int],_ target: Int) -> Int {
+    // 查找最后一个等于给定值的元素 返回元素的index
+    static func lastEqualSearch(_ arr: [Int],_ target: Int) -> Int {
         var left = 0, right = arr.count - 1
         let count = arr.count
         while left <= right {
@@ -130,3 +130,4 @@ class BinarySearch {
         return -1
     }
 }
+

@@ -63,4 +63,61 @@ class Demo {
          128054
          */
     }
+    func search(_ nums: [Int], _ target: Int) -> Int {
+            let count = nums.count
+            // 查找中间螺旋点 小于前面元素
+            var seperateIndex = 0
+            var index = 1
+            while index < count {
+                if nums[index] < nums[index - 1] {
+                    seperateIndex = index
+                    break
+                }
+            }
+            if seperateIndex == 0 {
+                var left = 0, right = count - 1
+                while left <= right {
+                    let mid = left + ((right - left)>>1)
+                    if nums[mid] == target {
+                        return mid
+                    } else if nums[mid] < target {
+                        left = mid + 1
+                    } else {
+                        right = mid - 1
+                    }
+                }
+            } else {
+                if target > nums[seperateIndex - 1] {
+                    return -1
+                }
+                // seperate...count-1
+                if target <= nums[count - 1] {
+                    var left = seperateIndex, right = count - 1
+                    while left <= right {
+                        let mid = left + ((right - left)>>1)
+                        if nums[mid] == target {
+                            return mid
+                        } else if nums[mid] < target {
+                            left = mid + 1
+                        } else {
+                            right = mid - 1
+                        }
+                    }
+                } else {
+                    // 0...seperate
+                    var left = 0, right = seperateIndex - 1
+                    while left <= right {
+                        let mid = left + ((right - left)>>1)
+                        if nums[mid] == target {
+                            return mid
+                        } else if nums[mid] < target {
+                            left = mid + 1
+                        } else {
+                            right = mid - 1
+                        }
+                    }
+                }
+            }
+            return -1
+        }
 }

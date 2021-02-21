@@ -8,7 +8,6 @@
 
 import Foundation
 print(">>>>>>>>>>>>>>>>>>>>Start!<<<<<<<<<<<<<<<<<<<<<<<")
-
-print(abs(4-7))
+ArrayAbout().arrayHandle()
 print(">>>>>>>>>>>>>>>>>>>>End!<<<<<<<<<<<<<<<<<<<<<<<")
 

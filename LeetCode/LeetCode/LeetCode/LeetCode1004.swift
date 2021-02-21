@@ -13,7 +13,7 @@ import Foundation
 class Solution1004 {
     func longestOnes(_ A: [Int], _ K: Int) -> Int {
         var left = 0 , right = 0
-        var count = A.count
+        let count = A.count
         var zeroCounter = 0, ans = 0
         while right < count {
             if A[right] == 0 {

@@ -154,6 +154,7 @@ class ArrayAbout {
         print(ret)//[6, 1, 2, 3, 4, 7, 3] //reduce可以利用这个操作进行魔法
         #endif
         //MARK: 属性
+        #if false
         let arr = [1, 2, 3, 4, 7, 3]
         print(arr.count) // 6
         print(arr.isEmpty) // false
@@ -164,6 +165,11 @@ class ArrayAbout {
         print(arr.lastIndex(of: 2)!)//1
         print(arr.firstIndex(of: 4)!)//3
         print(arr.split(separator: 3)) // [ArraySlice([1, 2]), ArraySlice([4, 7])]
+        #endif
+        //MARK: 子数组
+        let arr = [1, 2, 3, 4, 7, 3]
+        let subArr = Array(arr[0..<3])
+        print(subArr)
     }
 }
 

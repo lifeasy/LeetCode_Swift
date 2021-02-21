@@ -59,6 +59,6 @@ class DictionaryAbout {
         dic["name"] = nil
         print(dic)//["class": "3", "book": "yuwen"]
         dic.removeValue(forKey:"book")
-        print(dic)//["class": "3"]        
+        print(dic)//["class": "3"]
     }
 }

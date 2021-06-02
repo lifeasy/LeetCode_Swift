@@ -18,4 +18,12 @@ public class ListNode {
     public init() { val = 0; next = nil }
     public init(_ val: Int) { self.val = val; next = nil }
     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next }
+    
+    static func printListNode(_ head: ListNode?){
+        var cur = head
+        while cur != nil {
+            print("\(cur!.val)")
+            cur = cur?.next
+        }
+    }
 }
